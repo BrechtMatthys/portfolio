@@ -63,7 +63,7 @@ img, svg, video, audio {
 iframe {
   margin-bottom: 2rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 950px) {
 
   header {
     padding-top: 6rem;}
