@@ -59,7 +59,41 @@ img, svg, video, audio {
   max-width: 100%;
   height: auto;
   fill: currentColor;}
+#gsm{/*
+  border:1px solid black; width:40%; height:90vh;*/
+  width: 750px;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+#gsm img{
+  z-index: 1;
+  position: absolute;
+}
+#gsm iframe{
+position: absolute;
+  top: 55px;
+  left: 145px;
+  z-index: 2;
+  background-color: white;
+  width: 1000px;
+  height: 2072px;
+  border: 0px;
+  zoom: 0.51;
+  -moz-transform: scale(0.51);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.51);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.51);
+  -webkit-transform-origin: 0 0;
+}
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #scaled-frame {
+    zoom: 1;
+  }
+}
 iframe {
   margin-bottom: 2rem;
 }
