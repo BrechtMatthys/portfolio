@@ -88,7 +88,15 @@ position: absolute;
   -webkit-transform: scale(0.51);
   -webkit-transform-origin: 0 0;
 }
-
+#gsm #gsmAchtergrond{
+position: absolute;
+  top: 25px;
+  left: 60px;
+  z-index: 0;
+  background-color: #F5ECDC;
+  width: 290px;
+  height: 550px;
+}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   #scaled-frame {
     zoom: 1;
