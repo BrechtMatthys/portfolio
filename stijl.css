@@ -94,8 +94,8 @@ position: absolute;
   z-index: 0;
   background-color: #F5ECDC;
   width: 100%;
-  width: 100%;
-  height: 550px;
+  height: 500px;
+  width: 57%;
 }
 .wrapper{
   display: grid;
@@ -120,6 +120,15 @@ position: absolute;
 }
 #wrapper3 .b{
   grid-row: 2 / 4;
+}
+#wrapper4 .b{
+  grid-row: 2 / 5;
+}
+#wrapper4 .d{
+  grid-row: 3 / 5;
+}
+#wrapper4 .e{
+  grid-column: 1 / 3;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   #scaled-frame {
@@ -146,8 +155,14 @@ iframe {
   }
 }
 @media only screen and (max-width: 1002px) {
-  #wrapper2 .c{
+  #wrapper2 .c, #wrapper4 .c{
     display: none;
+  }
+  #wrapper4 .d{
+    grid-row: auto;
+  }
+  #wrapper4 .e{
+    grid-column: auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -157,5 +172,8 @@ iframe {
   }
   #wrapper1 .c{
     grid-row: 5;
+  }
+  #wrapper4 .e{
+    grid-column: 1/3;
   }
 }
