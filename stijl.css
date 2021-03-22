@@ -140,7 +140,7 @@ position: absolute;
 #wrapper4 .d{
   grid-row: 3 / 5;
 }
-#wrapper4 .e{
+#wrapper4 .e, #wrapper4 .f{
   grid-column: 1 / 3;
 }
 #wrapper5 .h{
